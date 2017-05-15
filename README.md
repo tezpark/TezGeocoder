@@ -33,7 +33,7 @@ pod "TezGeocoder"
 
 ## Usage
 ```objective-c
-// Geocoding (Get coordinate with address info)
+// Reverse-geocoding (Get coordinate with address info)
 CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(37.499378, 127.043054);
 TezGeocoder* reverseGeocoder = [[TezGeocoder alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
 NSLog(@"(%@) %@ %@ %@ %@ %@ %@ %@",
