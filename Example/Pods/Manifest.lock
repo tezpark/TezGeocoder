@@ -1,0 +1,16 @@
+PODS:
+  - TezGeocoder (0.1.0)
+
+DEPENDENCIES:
+  - TezGeocoder (from `../`)
+
+EXTERNAL SOURCES:
+  TezGeocoder:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TezGeocoder: f09e40b90ffe8cb8ef34b216970a31c457276232
+
+PODFILE CHECKSUM: 28cff49cb253e4e005533c6108b08c0f4b3a54e8
+
+COCOAPODS: 1.2.1

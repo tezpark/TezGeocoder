@@ -1,0 +1,6 @@
+framework module TezGeocoder {
+  umbrella header "TezGeocoder-umbrella.h"
+
+  export *
+  module * { export * }
+}

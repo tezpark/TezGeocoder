@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4813426C8134C50EA1F0F4A5B0B21C8A /* Pods-TezGeocoder_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E4BF64CA6021CC337AA1DDDB6F9599 /* Pods-TezGeocoder_Example-dummy.m */; };
+		51150A47667C77F9C552BF104EDEE7B4 /* Pods-TezGeocoder_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6149084FE77750A8BDFFC394F2C66167 /* Pods-TezGeocoder_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		669000F8B3A2172FFF0493A30DA753D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		90E65EED884F28DBF6FEBE15E6048F37 /* Pods-TezGeocoder_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E38EB93C9841BC96F987810132F45826 /* Pods-TezGeocoder_Tests-dummy.m */; };
+		9EE4C72B4F62835AEF10A7853B810045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AC85C4A33984C3D182F6B26E4D873023 /* Pods-TezGeocoder_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD2ADE3B34EB5C7E733C05BA87904E8 /* Pods-TezGeocoder_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B474F387200CCFEBD1393B1664E29420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B90CEA9BB168518E6DBF29F329DD1EF4 /* TezGeocoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E56A3B80AB2266DE695FE2519DBD4531 /* TezGeocoder-dummy.m */; };
+		C60B3615620BC21F07642298D222B1EB /* TezGeocoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C18BAB6BE122714EE54266A1659967 /* TezGeocoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD3FF4564DD1B89B9444F29A26DA196C /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1709FB28C91C82E284C526C79CD596 /* ReplaceMe.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28DE414D6FC74CD096DC9F68D4EF3726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A52D38D6422ABFE94EBFBD301D176CE;
+			remoteInfo = TezGeocoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0243B4A54B91288F5AC959D546A357D1 /* Pods_TezGeocoder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TezGeocoder_Tests.framework; path = "Pods-TezGeocoder_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17340F99531DFB4F6E7EDBA6218FC77F /* Pods-TezGeocoder_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TezGeocoder_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		1910E557BFC1667817240E623E502046 /* Pods-TezGeocoder_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TezGeocoder_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1966A8C525BCB7565C1F4002D0DCA714 /* Pods-TezGeocoder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TezGeocoder_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		23916AEEDDCF6283E0364B3822EC0C04 /* Pods-TezGeocoder_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TezGeocoder_Example-resources.sh"; sourceTree = "<group>"; };
+		242B2319010222EE7AA0338509E2470A /* Pods-TezGeocoder_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TezGeocoder_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		24D67B508F3112B0B882931762925294 /* Pods-TezGeocoder_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TezGeocoder_Tests.modulemap"; sourceTree = "<group>"; };
+		32E20C3D8DF9888960FBE3536457B5B3 /* Pods-TezGeocoder_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TezGeocoder_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		38FD24D320F24F2019235C45D5DB48D7 /* Pods-TezGeocoder_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TezGeocoder_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3AB2D7FA86C595841D1F46CAB9BF0D0C /* Pods-TezGeocoder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TezGeocoder_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3F3096B53E0F9DC50D3DC9E666E8C872 /* TezGeocoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TezGeocoder.xcconfig; sourceTree = "<group>"; };
+		3F43A516974287F6A822D9629A93D834 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4177EF9950CF8A1B50926433C63DD0BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49F760EBF4D12ECAB38E9F00C9C4D572 /* TezGeocoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TezGeocoder.framework; path = TezGeocoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6149084FE77750A8BDFFC394F2C66167 /* Pods-TezGeocoder_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TezGeocoder_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		80C18BAB6BE122714EE54266A1659967 /* TezGeocoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TezGeocoder-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94CFB22EC047CF55D9A0380850DAFE5A /* TezGeocoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TezGeocoder-prefix.pch"; sourceTree = "<group>"; };
+		A7B87C73ABE08540F19AE047DEE0C6EB /* Pods-TezGeocoder_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TezGeocoder_Example.modulemap"; sourceTree = "<group>"; };
+		B7E4BF64CA6021CC337AA1DDDB6F9599 /* Pods-TezGeocoder_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TezGeocoder_Example-dummy.m"; sourceTree = "<group>"; };
+		B8435FF39A3D303F15A4A32F5A6B4FC0 /* Pods-TezGeocoder_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TezGeocoder_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B8F6E589D7415C12F30D74EA69838E54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2815D79F8101E77295198CA339DAB94 /* Pods_TezGeocoder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TezGeocoder_Example.framework; path = "Pods-TezGeocoder_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0103DE7257873D99C4D8BC22F6590C8 /* Pods-TezGeocoder_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TezGeocoder_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE1709FB28C91C82E284C526C79CD596 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		E38EB93C9841BC96F987810132F45826 /* Pods-TezGeocoder_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TezGeocoder_Tests-dummy.m"; sourceTree = "<group>"; };
+		E3929B015EE4889A53075A8D451D93FB /* TezGeocoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TezGeocoder.modulemap; sourceTree = "<group>"; };
+		E56A3B80AB2266DE695FE2519DBD4531 /* TezGeocoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TezGeocoder-dummy.m"; sourceTree = "<group>"; };
+		E58D781E0B5BA85C60D865F22F03F8F7 /* Pods-TezGeocoder_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TezGeocoder_Tests-resources.sh"; sourceTree = "<group>"; };
+		E8BE41AAFEECAC9EA78C318ABAD8EED5 /* Pods-TezGeocoder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TezGeocoder_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FDD2ADE3B34EB5C7E733C05BA87904E8 /* Pods-TezGeocoder_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TezGeocoder_Example-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DB0903A5107573924FAB1832D341908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE4C72B4F62835AEF10A7853B810045 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CCC4C16CB27321B688E91C4B2436E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669000F8B3A2172FFF0493A30DA753D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92604E2ABBF8F2D4E8A8CB318F927ADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B474F387200CCFEBD1393B1664E29420 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28B247DC2370CE7A3242038CEB2068CD /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43CEB8CA424F507FBD14C4D9B0E21374 /* TezGeocoder */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2F864594273E6C7CB4C3C2C676DF9B7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2815D79F8101E77295198CA339DAB94 /* Pods_TezGeocoder_Example.framework */,
+				0243B4A54B91288F5AC959D546A357D1 /* Pods_TezGeocoder_Tests.framework */,
+				49F760EBF4D12ECAB38E9F00C9C4D572 /* TezGeocoder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E73811AC56E0D2D30FE7D4D70803222 /* Pods-TezGeocoder_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4177EF9950CF8A1B50926433C63DD0BA /* Info.plist */,
+				24D67B508F3112B0B882931762925294 /* Pods-TezGeocoder_Tests.modulemap */,
+				32E20C3D8DF9888960FBE3536457B5B3 /* Pods-TezGeocoder_Tests-acknowledgements.markdown */,
+				1910E557BFC1667817240E623E502046 /* Pods-TezGeocoder_Tests-acknowledgements.plist */,
+				E38EB93C9841BC96F987810132F45826 /* Pods-TezGeocoder_Tests-dummy.m */,
+				17340F99531DFB4F6E7EDBA6218FC77F /* Pods-TezGeocoder_Tests-frameworks.sh */,
+				E58D781E0B5BA85C60D865F22F03F8F7 /* Pods-TezGeocoder_Tests-resources.sh */,
+				6149084FE77750A8BDFFC394F2C66167 /* Pods-TezGeocoder_Tests-umbrella.h */,
+				D0103DE7257873D99C4D8BC22F6590C8 /* Pods-TezGeocoder_Tests.debug.xcconfig */,
+				1966A8C525BCB7565C1F4002D0DCA714 /* Pods-TezGeocoder_Tests.release.xcconfig */,
+			);
+			name = "Pods-TezGeocoder_Tests";
+			path = "Target Support Files/Pods-TezGeocoder_Tests";
+			sourceTree = "<group>";
+		};
+		43CEB8CA424F507FBD14C4D9B0E21374 /* TezGeocoder */ = {
+			isa = PBXGroup;
+			children = (
+				B1DFD05EFB677151C37DF72EF1C77D38 /* Support Files */,
+				A68DADF7FA2A294DB9A06C2A903118C1 /* TezGeocoder */,
+			);
+			name = TezGeocoder;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				28B247DC2370CE7A3242038CEB2068CD /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				2F864594273E6C7CB4C3C2C676DF9B7D /* Products */,
+				B0D96009E3C15602256249E7B4D98467 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9FBCD6BB09EA0A2B2BFD301115CC559F /* Pods-TezGeocoder_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3F43A516974287F6A822D9629A93D834 /* Info.plist */,
+				A7B87C73ABE08540F19AE047DEE0C6EB /* Pods-TezGeocoder_Example.modulemap */,
+				38FD24D320F24F2019235C45D5DB48D7 /* Pods-TezGeocoder_Example-acknowledgements.markdown */,
+				242B2319010222EE7AA0338509E2470A /* Pods-TezGeocoder_Example-acknowledgements.plist */,
+				B7E4BF64CA6021CC337AA1DDDB6F9599 /* Pods-TezGeocoder_Example-dummy.m */,
+				B8435FF39A3D303F15A4A32F5A6B4FC0 /* Pods-TezGeocoder_Example-frameworks.sh */,
+				23916AEEDDCF6283E0364B3822EC0C04 /* Pods-TezGeocoder_Example-resources.sh */,
+				FDD2ADE3B34EB5C7E733C05BA87904E8 /* Pods-TezGeocoder_Example-umbrella.h */,
+				3AB2D7FA86C595841D1F46CAB9BF0D0C /* Pods-TezGeocoder_Example.debug.xcconfig */,
+				E8BE41AAFEECAC9EA78C318ABAD8EED5 /* Pods-TezGeocoder_Example.release.xcconfig */,
+			);
+			name = "Pods-TezGeocoder_Example";
+			path = "Target Support Files/Pods-TezGeocoder_Example";
+			sourceTree = "<group>";
+		};
+		A68DADF7FA2A294DB9A06C2A903118C1 /* TezGeocoder */ = {
+			isa = PBXGroup;
+			children = (
+				FB9CE765A48C41ACF11071699FF35305 /* Classes */,
+			);
+			name = TezGeocoder;
+			path = TezGeocoder;
+			sourceTree = "<group>";
+		};
+		B0D96009E3C15602256249E7B4D98467 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FBCD6BB09EA0A2B2BFD301115CC559F /* Pods-TezGeocoder_Example */,
+				3E73811AC56E0D2D30FE7D4D70803222 /* Pods-TezGeocoder_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B1DFD05EFB677151C37DF72EF1C77D38 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8F6E589D7415C12F30D74EA69838E54 /* Info.plist */,
+				E3929B015EE4889A53075A8D451D93FB /* TezGeocoder.modulemap */,
+				3F3096B53E0F9DC50D3DC9E666E8C872 /* TezGeocoder.xcconfig */,
+				E56A3B80AB2266DE695FE2519DBD4531 /* TezGeocoder-dummy.m */,
+				94CFB22EC047CF55D9A0380850DAFE5A /* TezGeocoder-prefix.pch */,
+				80C18BAB6BE122714EE54266A1659967 /* TezGeocoder-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TezGeocoder";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FB9CE765A48C41ACF11071699FF35305 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DE1709FB28C91C82E284C526C79CD596 /* ReplaceMe.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D8B3B9FF3280CC7835A2AC21D025999 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60B3615620BC21F07642298D222B1EB /* TezGeocoder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E735AB7A2160362B062B74532BE3D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC85C4A33984C3D182F6B26E4D873023 /* Pods-TezGeocoder_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A17C36425294CB0808294BB6CFD30942 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51150A47667C77F9C552BF104EDEE7B4 /* Pods-TezGeocoder_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5693378078829A30A4F543D3B8FBB6C4 /* Pods-TezGeocoder_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BC7FAF4343052C4AFFFE81700F3DAE9 /* Build configuration list for PBXNativeTarget "Pods-TezGeocoder_Example" */;
+			buildPhases = (
+				C66F146010E965236B99A9D4D253DF3C /* Sources */,
+				2DB0903A5107573924FAB1832D341908 /* Frameworks */,
+				75E735AB7A2160362B062B74532BE3D1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				430EAD47B0376B21DD95780801F50B24 /* PBXTargetDependency */,
+			);
+			name = "Pods-TezGeocoder_Example";
+			productName = "Pods-TezGeocoder_Example";
+			productReference = C2815D79F8101E77295198CA339DAB94 /* Pods_TezGeocoder_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A52D38D6422ABFE94EBFBD301D176CE /* TezGeocoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C02FEAF3C119DE44C679C510F3D55E2C /* Build configuration list for PBXNativeTarget "TezGeocoder" */;
+			buildPhases = (
+				A19A6C0D666C764E81BC6532C5DA1428 /* Sources */,
+				69CCC4C16CB27321B688E91C4B2436E7 /* Frameworks */,
+				5D8B3B9FF3280CC7835A2AC21D025999 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TezGeocoder;
+			productName = TezGeocoder;
+			productReference = 49F760EBF4D12ECAB38E9F00C9C4D572 /* TezGeocoder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF8BA19A8892958B3CD4C206A4D92A37 /* Pods-TezGeocoder_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BF5D887E9BF7EC4CE10BA9A98A4B7C9 /* Build configuration list for PBXNativeTarget "Pods-TezGeocoder_Tests" */;
+			buildPhases = (
+				2D69784060D5C624D9E667851D5EC7B0 /* Sources */,
+				92604E2ABBF8F2D4E8A8CB318F927ADC /* Frameworks */,
+				A17C36425294CB0808294BB6CFD30942 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TezGeocoder_Tests";
+			productName = "Pods-TezGeocoder_Tests";
+			productReference = 0243B4A54B91288F5AC959D546A357D1 /* Pods_TezGeocoder_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2F864594273E6C7CB4C3C2C676DF9B7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5693378078829A30A4F543D3B8FBB6C4 /* Pods-TezGeocoder_Example */,
+				BF8BA19A8892958B3CD4C206A4D92A37 /* Pods-TezGeocoder_Tests */,
+				5A52D38D6422ABFE94EBFBD301D176CE /* TezGeocoder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D69784060D5C624D9E667851D5EC7B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E65EED884F28DBF6FEBE15E6048F37 /* Pods-TezGeocoder_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A19A6C0D666C764E81BC6532C5DA1428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3FF4564DD1B89B9444F29A26DA196C /* ReplaceMe.m in Sources */,
+				B90CEA9BB168518E6DBF29F329DD1EF4 /* TezGeocoder-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C66F146010E965236B99A9D4D253DF3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4813426C8134C50EA1F0F4A5B0B21C8A /* Pods-TezGeocoder_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		430EAD47B0376B21DD95780801F50B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TezGeocoder;
+			target = 5A52D38D6422ABFE94EBFBD301D176CE /* TezGeocoder */;
+			targetProxy = 28DE414D6FC74CD096DC9F68D4EF3726 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		296B029746316142FC3D747A9C9CB82A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F3096B53E0F9DC50D3DC9E666E8C872 /* TezGeocoder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TezGeocoder/TezGeocoder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TezGeocoder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TezGeocoder/TezGeocoder.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TezGeocoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		533A8CEB836CF3EB898F5BEC0B950A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8BE41AAFEECAC9EA78C318ABAD8EED5 /* Pods-TezGeocoder_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TezGeocoder_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TezGeocoder_Example/Pods-TezGeocoder_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TezGeocoder_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		826E693040E6E8278B186087CF516BBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB2D7FA86C595841D1F46CAB9BF0D0C /* Pods-TezGeocoder_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TezGeocoder_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TezGeocoder_Example/Pods-TezGeocoder_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TezGeocoder_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		973A299BD2C2246BA06E1A0024B2301B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0103DE7257873D99C4D8BC22F6590C8 /* Pods-TezGeocoder_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TezGeocoder_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TezGeocoder_Tests/Pods-TezGeocoder_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TezGeocoder_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CAB4E5776AA175EAAF5C5CB13F72C3F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1966A8C525BCB7565C1F4002D0DCA714 /* Pods-TezGeocoder_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TezGeocoder_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TezGeocoder_Tests/Pods-TezGeocoder_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TezGeocoder_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D574025C06CF22929623C8473B8F63EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F3096B53E0F9DC50D3DC9E666E8C872 /* TezGeocoder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TezGeocoder/TezGeocoder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TezGeocoder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TezGeocoder/TezGeocoder.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TezGeocoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BC7FAF4343052C4AFFFE81700F3DAE9 /* Build configuration list for PBXNativeTarget "Pods-TezGeocoder_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				826E693040E6E8278B186087CF516BBD /* Debug */,
+				533A8CEB836CF3EB898F5BEC0B950A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BF5D887E9BF7EC4CE10BA9A98A4B7C9 /* Build configuration list for PBXNativeTarget "Pods-TezGeocoder_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973A299BD2C2246BA06E1A0024B2301B /* Debug */,
+				CAB4E5776AA175EAAF5C5CB13F72C3F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C02FEAF3C119DE44C679C510F3D55E2C /* Build configuration list for PBXNativeTarget "TezGeocoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296B029746316142FC3D747A9C9CB82A /* Debug */,
+				D574025C06CF22929623C8473B8F63EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
