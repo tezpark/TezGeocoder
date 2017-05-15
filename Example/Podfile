@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TezGeocoder_Example' do
+  pod 'TezGeocoder', :path => '../'
+
+  target 'TezGeocoder_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
