@@ -23,32 +23,31 @@
 {
     [super viewDidLoad];
     [self.mapView setDelegate:self];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated {
-//    TezGeocoder* reverseGeocoder = [[TezGeocoder alloc] initWithLatitude:37.499411 longitude:127.043039];
+    // Example : Get address info with coordinate.
     TezGeocoder* reverseGeocoder = [[TezGeocoder alloc] initWithLatitude:mapView.centerCoordinate.latitude longitude:mapView.centerCoordinate.longitude];
-    NSLog(@"%@", [reverseGeocoder addressInfos]);
-    NSLog(@"(%@) %@ %@ %@ %@ %@ %@ %@",
-          [reverseGeocoder postalCode],
-          [reverseGeocoder country],
-          [reverseGeocoder countryCode],
-          [reverseGeocoder state],
-          [reverseGeocoder city],
-          [reverseGeocoder street],
-          [reverseGeocoder subStreet],
-          [reverseGeocoder name]);
-
-    
     [self.textView setText:[[reverseGeocoder addressInfos] description]];
+    
+    //    NSLog(@"(%@) %@ %@ %@ %@ %@ %@ %@",
+//          [reverseGeocoder postalCode],
+//          [reverseGeocoder country],
+//          [reverseGeocoder countryCode],
+//          [reverseGeocoder state],
+//          [reverseGeocoder city],
+//          [reverseGeocoder street],
+//          [reverseGeocoder subStreet],
+//          [reverseGeocoder name]);
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [self.searchField resignFirstResponder];
     
-//    TezGeocoder* geocoder = [TezGeocoder alloc]
+    // Example : Get address info with string.
+    TezGeocoder* geocoder = [[TezGeocoder alloc] initWithAddressString:textField.text];
     
+    [self.mapView setCenterCoordinate:CLLocationCoordinate2DMake(geocoder.location.coordinate.latitude, geocoder.location.coordinate.longitude) animated:YES];
     
     return YES;
 }

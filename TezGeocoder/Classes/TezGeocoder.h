@@ -7,45 +7,61 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface TezGeocoder : NSObject
 
 #pragma mark - Reverse-geocoding
-
-/**************
- * Initialize *
- **************/
-
+/**
+ *  Init & Generate geocoder with coordinate
+ *
+ *  @param lat latitude
+ *  @param lon logitude
+ *
+ *  @return self
+ */
 - (id)initWithLatitude:(double)lat longitude:(double)lon;
 
 
+#pragma mark - Geocoding
+/**
+ *  Init & Generate geocoder with string
+ *
+ *  @param addrStr address name string
+ *
+ *  @return self
+ */
+- (id)initWithAddressString:(NSString *)addrStr;
+
+
+#pragma mark - Access address data
 /**********************
  * Address dictionary *
  **********************/
 
 /**
- *  Reverse-geocoding : address informations
+ *  address informations
  *
  *  @return address infos
  */
 - (NSDictionary *)addressInfos;
 
 /**
- *  Reverse-geocoding : Name (eg. Apple Inc.)
+ *  Name (eg. Apple Inc.)
  *
  *  @return name string
  */
 - (NSString *)name;
 
 /**
- *  Reverse-geocoding : Sub street (eg. 1) / 번지
+ *  Sub street (eg. 1) / 번지
  *
  *  @return subStreet string
  */
 - (NSString *)subStreet;
 
 /**
- *  Reverse-geocoding : Street / Dong
+ *  Street / Dong
  *
  *  @return street string
  */
@@ -53,42 +69,45 @@
 
 // City / Gu,Gun
 /**
- *  Reverse-geocoding : City / Gu,Gun
+ *  City / Gu,Gun
  *
  *  @return city string
  */
 - (NSString *)city;
 
 /**
- *  Reverse-geocoding : State (eg. Seoul) / Si, Do
+ *  State (eg. Seoul) / Si, Do
  *
  *  @return state string
  */
 - (NSString *)state;
 
 /**
- *  Reverse-geocoding : Zip code (eg. 95014)
+ *  Zip code (eg. 95014)
  *
  *  @return zip code string
  */
 - (NSString *)postalCode;
 
 /**
- *  Reverse-geocoding : ISO country code (eg. KR)
+ *  ISO country code (eg. KR)
  *
  *  @return country code string
  */
 - (NSString *)countryCode;
 
 /**
- *  Reverse-geocoding : Country name (eg. South Korea)
+ *  Country name (eg. South Korea)
  *
  *  @return country string
  */
 - (NSString *)country;
 
-
-#pragma mark - Geocoding
-- (id)initWithAddressString:(NSString *)addrStr;
+/**
+ *  Location
+ *
+ *  @return location
+ */
+- (CLLocation*)location;
 
 @end

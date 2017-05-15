@@ -7,7 +7,6 @@
 //
 
 #import "TezGeocoder.h"
-#import <CoreLocation/CoreLocation.h>
 #import <Contacts/CNPostalAddress.h>
 
 @interface TezGeocoder ()
@@ -54,7 +53,7 @@
                        if (error) {
                            NSLog(@"Failed to reverse-geocode: %@",[error localizedDescription]);
                            finishBlock = YES;
-
+                           
                            return;
                        }
                        
@@ -67,11 +66,51 @@
     }
 }
 
+#pragma mark - Geocoding
+
+- (id)initWithAddressString:(NSString *)addrStr {
+    if (self == [super init]) {
+        _latitude = 0.0;
+        _longitude = 0.0;
+        _addressStr = addrStr;
+        
+        [self generatePlacemark:addrStr];
+    }
+    return self;
+}
+
+/**
+ *  [Private] Generate geocoder with string
+ *
+ *  @param addressStr address string
+ */
+- (void)generatePlacemark:(NSString *)addressStr {
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    __block BOOL finishBlock = NO;
+    [geocoder geocodeAddressString:addressStr
+                 completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+                     if (error) {
+                         NSLog(@"Failed to geocode: %@",[error localizedDescription]);
+                         finishBlock = YES;
+                         
+                         return;
+                     }
+                     
+                     _placemark = placemarks[0];
+                     finishBlock = YES;
+                 }];
+    
+    while(!finishBlock) {
+        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.01]];
+    }
+}
+
+
+#pragma mark - Access address data
 
 - (NSDictionary *)addressInfos {
     return [self.placemark addressDictionary];
 }
-
 - (NSString *)name {
     return [self.placemark name];
 }
@@ -96,43 +135,8 @@
 - (NSString *)country {
     return [self.placemark country];
 }
-
-//
-//#pragma mark - Geocoding
-//
-//- (id)initWithAddressString:(NSString *)addrStr {
-//    if (self == [super init]) {
-//        _latitude = 0.0;
-//        _longitude = 0.0;
-//        _addressStr = addrStr;
-//        
-//        [self generatePlacemark:addrStr];
-//    }
-//    return self;
-//}
-//
-//- (void)generatePlacemark:(NSString *)addressStr {
-//    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
-//    CLLocationCoordinate2D coordinate;
-////    CLLocation *location = [[CLLocation alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
-//    __block BOOL finishBlock = NO;
-//    [geocoder geocodeAddressString:addressStr
-//                 completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
-//                     if (error) {
-//                         NSLog(@"Failed to geocode: %@",[error localizedDescription]);
-//                         finishBlock = YES;
-//                         
-//                         return;
-//                     }
-//                     
-//                     _placemark = placemarks[0];
-//                     finishBlock = YES;
-//    }];
-//
-//    while(!finishBlock) {
-//        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.01]];
-//    }
-//}
-
+- (CLLocation*)location {
+    return [self.placemark location];
+}
 
 @end
