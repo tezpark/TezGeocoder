@@ -14,6 +14,8 @@
 @property (nonatomic, assign) double latitude;
 @property (nonatomic, assign) double longitude;
 
+@property (nonatomic, strong) NSString *addressStr;
+
 @property (nonatomic, strong) CLPlacemark *placemark;
 @end
 
@@ -27,8 +29,9 @@
     if (self == [super init]) {
         _latitude = latitude;
         _longitude = longitude;
+        _addressStr = nil;
         
-        [self generatePlacemakr:_latitude longitude:_longitude];
+        [self generatePlacemark:_latitude longitude:_longitude];
     }
     return self;
 }
@@ -39,21 +42,29 @@
  *  @param lat latitude
  *  @param lon longitude
  */
-- (void)generatePlacemakr:(double)lat longitude:(double)lon {
-    __block CLPlacemark *placemark = [CLPlacemark new];
+- (void)generatePlacemark:(double)lat longitude:(double)lon {
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
-    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(lat, lon);
-    CLLocation* location = [[CLLocation alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
-    [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
-        if (error) {
-            NSLog(@"Failed to reverse-geocode: %@", [error localizedDescription]);
-            return;
-        }
-        
-        placemark = [placemarks firstObject];
-    }];
+    __block BOOL finishBlock = NO;
     
-    _placemark = placemark;
+    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(lat, lon);
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
+    
+    [geocoder reverseGeocodeLocation:location
+                   completionHandler:^(NSArray *placemarks, NSError *error) {
+                       if (error) {
+                           NSLog(@"Failed to reverse-geocode: %@",[error localizedDescription]);
+                           finishBlock = YES;
+
+                           return;
+                       }
+                       
+                       _placemark = placemarks[0];
+                       finishBlock = YES;
+                   }];
+    
+    while(!finishBlock) {
+        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.01]];
+    }
 }
 
 
@@ -85,5 +96,43 @@
 - (NSString *)country {
     return [self.placemark country];
 }
+
+//
+//#pragma mark - Geocoding
+//
+//- (id)initWithAddressString:(NSString *)addrStr {
+//    if (self == [super init]) {
+//        _latitude = 0.0;
+//        _longitude = 0.0;
+//        _addressStr = addrStr;
+//        
+//        [self generatePlacemark:addrStr];
+//    }
+//    return self;
+//}
+//
+//- (void)generatePlacemark:(NSString *)addressStr {
+//    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+//    CLLocationCoordinate2D coordinate;
+////    CLLocation *location = [[CLLocation alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
+//    __block BOOL finishBlock = NO;
+//    [geocoder geocodeAddressString:addressStr
+//                 completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+//                     if (error) {
+//                         NSLog(@"Failed to geocode: %@",[error localizedDescription]);
+//                         finishBlock = YES;
+//                         
+//                         return;
+//                     }
+//                     
+//                     _placemark = placemarks[0];
+//                     finishBlock = YES;
+//    }];
+//
+//    while(!finishBlock) {
+//        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.01]];
+//    }
+//}
+
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
 
 @interface TezGeocoder : NSObject
 
@@ -87,5 +86,9 @@
  *  @return country string
  */
 - (NSString *)country;
+
+
+#pragma mark - Geocoding
+- (id)initWithAddressString:(NSString *)addrStr;
 
 @end
