@@ -26,26 +26,27 @@
 }
 
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated {
-    // Example : Get address info with coordinate.
+    // Reverse-Geocoding (Get coordinate with address info)
     TezGeocoder* reverseGeocoder = [[TezGeocoder alloc] initWithLatitude:mapView.centerCoordinate.latitude longitude:mapView.centerCoordinate.longitude];
     [self.textView setText:[[reverseGeocoder addressInfos] description]];
     
-    //    NSLog(@"(%@) %@ %@ %@ %@ %@ %@ %@",
-//          [reverseGeocoder postalCode],
-//          [reverseGeocoder country],
-//          [reverseGeocoder countryCode],
-//          [reverseGeocoder state],
-//          [reverseGeocoder city],
-//          [reverseGeocoder street],
-//          [reverseGeocoder subStreet],
-//          [reverseGeocoder name]);
+    NSLog(@"(%@) %@ %@ %@ %@ %@ %@ %@",
+          [reverseGeocoder postalCode],
+          [reverseGeocoder country],
+          [reverseGeocoder countryCode],
+          [reverseGeocoder state],
+          [reverseGeocoder city],
+          [reverseGeocoder street],
+          [reverseGeocoder subStreet],
+          [reverseGeocoder name]);
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [self.searchField resignFirstResponder];
     
-    // Example : Get address info with string.
+    // Geocoding (Get address info with coordinate)
     TezGeocoder* geocoder = [[TezGeocoder alloc] initWithAddressString:textField.text];
+    NSLog(@"lat:%f lon:%f", geocoder.location.coordinate.latitude, geocoder.location.coordinate.longitude);
     
     [self.mapView setCenterCoordinate:CLLocationCoordinate2DMake(geocoder.location.coordinate.latitude, geocoder.location.coordinate.longitude) animated:YES];
     
