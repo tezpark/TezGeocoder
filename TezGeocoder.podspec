@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TezGeocoder'
   s.version          = '0.2.0'
-  s.summary          = 'Assist for geocoder and reverse-geocoder.'
+  s.summary          = 'Geocoding and reverse-geocoding'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
