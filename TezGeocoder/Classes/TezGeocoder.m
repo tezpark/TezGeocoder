@@ -66,7 +66,7 @@
     }
 }
 
-#pragma mark - Geocoding
+#pragma mark - Forward-Geocoding
 
 - (id)initWithAddressString:(NSString *)addrStr {
     if (self == [super init]) {

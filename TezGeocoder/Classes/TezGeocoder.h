@@ -23,7 +23,7 @@
 - (id)initWithLatitude:(double)lat longitude:(double)lon;
 
 
-#pragma mark - Geocoding
+#pragma mark - Forward-Geocoding
 /**
  *  Init & Generate geocoder with string
  *
