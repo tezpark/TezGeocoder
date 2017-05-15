@@ -22,7 +22,7 @@ pod "TezGeocoder"
 
 ## Author
 
-ptswin@gmail.com, perfect@foodfly.co.kr
+TezPark, ptswin@gmail.com
 
 ## License
 
