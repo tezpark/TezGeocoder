@@ -7,6 +7,7 @@
 //
 
 #import "TezGeocoderViewController.h"
+#import <TezGeocoder/TezGeocoder.h>
 
 @interface TezGeocoderViewController ()
 
@@ -18,6 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

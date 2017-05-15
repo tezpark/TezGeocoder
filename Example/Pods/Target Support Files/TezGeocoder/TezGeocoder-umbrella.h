@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "TezGeocoder.h"
 
 FOUNDATION_EXPORT double TezGeocoderVersionNumber;
 FOUNDATION_EXPORT const unsigned char TezGeocoderVersionString[];

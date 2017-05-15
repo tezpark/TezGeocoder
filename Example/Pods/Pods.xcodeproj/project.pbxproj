@@ -7,21 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04B945E0204C32116722C5C68F04DED1 /* TezGeocoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C18BAB6BE122714EE54266A1659967 /* TezGeocoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4813426C8134C50EA1F0F4A5B0B21C8A /* Pods-TezGeocoder_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E4BF64CA6021CC337AA1DDDB6F9599 /* Pods-TezGeocoder_Example-dummy.m */; };
 		51150A47667C77F9C552BF104EDEE7B4 /* Pods-TezGeocoder_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6149084FE77750A8BDFFC394F2C66167 /* Pods-TezGeocoder_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63F92841CFADCEFB5ED4F8378692AADA /* TezGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B79769797B50099C04DB52189E23B57 /* TezGeocoder.m */; };
 		669000F8B3A2172FFF0493A30DA753D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7F6193F27056727BC75CCC8FBDF57281 /* TezGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 643D3EB262B330987B1686C6A3A83DB2 /* TezGeocoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90E65EED884F28DBF6FEBE15E6048F37 /* Pods-TezGeocoder_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E38EB93C9841BC96F987810132F45826 /* Pods-TezGeocoder_Tests-dummy.m */; };
 		9EE4C72B4F62835AEF10A7853B810045 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A3DD3985F8124AEA41995A4F340BFE3E /* TezGeocoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E56A3B80AB2266DE695FE2519DBD4531 /* TezGeocoder-dummy.m */; };
 		AC85C4A33984C3D182F6B26E4D873023 /* Pods-TezGeocoder_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD2ADE3B34EB5C7E733C05BA87904E8 /* Pods-TezGeocoder_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B474F387200CCFEBD1393B1664E29420 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B90CEA9BB168518E6DBF29F329DD1EF4 /* TezGeocoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E56A3B80AB2266DE695FE2519DBD4531 /* TezGeocoder-dummy.m */; };
-		C60B3615620BC21F07642298D222B1EB /* TezGeocoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C18BAB6BE122714EE54266A1659967 /* TezGeocoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D05665481EC98DD200612927 /* TezGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = D05665461EC98DD200612927 /* TezGeocoder.h */; };
-		D05665491EC98DD200612927 /* TezGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = D05665461EC98DD200612927 /* TezGeocoder.h */; };
-		D056654A1EC98DD200612927 /* TezGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = D05665461EC98DD200612927 /* TezGeocoder.h */; };
-		D056654B1EC98DD200612927 /* TezGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D05665471EC98DD200612927 /* TezGeocoder.m */; };
-		D056654C1EC98DD200612927 /* TezGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D05665471EC98DD200612927 /* TezGeocoder.m */; };
-		D056654D1EC98DD200612927 /* TezGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D05665471EC98DD200612927 /* TezGeocoder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,35 +31,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0243B4A54B91288F5AC959D546A357D1 /* Pods_TezGeocoder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TezGeocoder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0243B4A54B91288F5AC959D546A357D1 /* Pods_TezGeocoder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TezGeocoder_Tests.framework; path = "Pods-TezGeocoder_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17340F99531DFB4F6E7EDBA6218FC77F /* Pods-TezGeocoder_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TezGeocoder_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		1910E557BFC1667817240E623E502046 /* Pods-TezGeocoder_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TezGeocoder_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1966A8C525BCB7565C1F4002D0DCA714 /* Pods-TezGeocoder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TezGeocoder_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1B79769797B50099C04DB52189E23B57 /* TezGeocoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TezGeocoder.m; sourceTree = "<group>"; };
 		23916AEEDDCF6283E0364B3822EC0C04 /* Pods-TezGeocoder_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TezGeocoder_Example-resources.sh"; sourceTree = "<group>"; };
 		242B2319010222EE7AA0338509E2470A /* Pods-TezGeocoder_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TezGeocoder_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		24D67B508F3112B0B882931762925294 /* Pods-TezGeocoder_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TezGeocoder_Tests.modulemap"; sourceTree = "<group>"; };
+		24D67B508F3112B0B882931762925294 /* Pods-TezGeocoder_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TezGeocoder_Tests.modulemap"; sourceTree = "<group>"; };
 		32E20C3D8DF9888960FBE3536457B5B3 /* Pods-TezGeocoder_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TezGeocoder_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		38FD24D320F24F2019235C45D5DB48D7 /* Pods-TezGeocoder_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TezGeocoder_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3AB2D7FA86C595841D1F46CAB9BF0D0C /* Pods-TezGeocoder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TezGeocoder_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3F3096B53E0F9DC50D3DC9E666E8C872 /* TezGeocoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TezGeocoder.xcconfig; sourceTree = "<group>"; };
 		3F43A516974287F6A822D9629A93D834 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4177EF9950CF8A1B50926433C63DD0BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49F760EBF4D12ECAB38E9F00C9C4D572 /* TezGeocoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TezGeocoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F760EBF4D12ECAB38E9F00C9C4D572 /* TezGeocoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TezGeocoder.framework; path = TezGeocoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6149084FE77750A8BDFFC394F2C66167 /* Pods-TezGeocoder_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TezGeocoder_Tests-umbrella.h"; sourceTree = "<group>"; };
+		643D3EB262B330987B1686C6A3A83DB2 /* TezGeocoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TezGeocoder.h; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		80C18BAB6BE122714EE54266A1659967 /* TezGeocoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TezGeocoder-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94CFB22EC047CF55D9A0380850DAFE5A /* TezGeocoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TezGeocoder-prefix.pch"; sourceTree = "<group>"; };
-		A7B87C73ABE08540F19AE047DEE0C6EB /* Pods-TezGeocoder_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TezGeocoder_Example.modulemap"; sourceTree = "<group>"; };
+		A7B87C73ABE08540F19AE047DEE0C6EB /* Pods-TezGeocoder_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TezGeocoder_Example.modulemap"; sourceTree = "<group>"; };
 		B7E4BF64CA6021CC337AA1DDDB6F9599 /* Pods-TezGeocoder_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TezGeocoder_Example-dummy.m"; sourceTree = "<group>"; };
 		B8435FF39A3D303F15A4A32F5A6B4FC0 /* Pods-TezGeocoder_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TezGeocoder_Example-frameworks.sh"; sourceTree = "<group>"; };
 		B8F6E589D7415C12F30D74EA69838E54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2815D79F8101E77295198CA339DAB94 /* Pods_TezGeocoder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TezGeocoder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2815D79F8101E77295198CA339DAB94 /* Pods_TezGeocoder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TezGeocoder_Example.framework; path = "Pods-TezGeocoder_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0103DE7257873D99C4D8BC22F6590C8 /* Pods-TezGeocoder_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TezGeocoder_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D05665461EC98DD200612927 /* TezGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TezGeocoder.h; sourceTree = "<group>"; };
-		D05665471EC98DD200612927 /* TezGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TezGeocoder.m; sourceTree = "<group>"; };
 		E38EB93C9841BC96F987810132F45826 /* Pods-TezGeocoder_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TezGeocoder_Tests-dummy.m"; sourceTree = "<group>"; };
-		E3929B015EE4889A53075A8D451D93FB /* TezGeocoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TezGeocoder.modulemap; sourceTree = "<group>"; };
+		E3929B015EE4889A53075A8D451D93FB /* TezGeocoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TezGeocoder.modulemap; sourceTree = "<group>"; };
 		E56A3B80AB2266DE695FE2519DBD4531 /* TezGeocoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TezGeocoder-dummy.m"; sourceTree = "<group>"; };
 		E58D781E0B5BA85C60D865F22F03F8F7 /* Pods-TezGeocoder_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TezGeocoder_Tests-resources.sh"; sourceTree = "<group>"; };
 		E8BE41AAFEECAC9EA78C318ABAD8EED5 /* Pods-TezGeocoder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TezGeocoder_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				B1DFD05EFB677151C37DF72EF1C77D38 /* Support Files */,
-				A68DADF7FA2A294DB9A06C2A903118C1 /* TezGeocoder */,
+				F8A0FBBEFEC7E53793C0C475E0082659 /* TezGeocoder */,
 			);
 			name = TezGeocoder;
 			path = ../..;
@@ -171,14 +167,6 @@
 			);
 			name = "Pods-TezGeocoder_Example";
 			path = "Target Support Files/Pods-TezGeocoder_Example";
-			sourceTree = "<group>";
-		};
-		A68DADF7FA2A294DB9A06C2A903118C1 /* TezGeocoder */ = {
-			isa = PBXGroup;
-			children = (
-				FB9CE765A48C41ACF11071699FF35305 /* Classes */,
-			);
-			path = TezGeocoder;
 			sourceTree = "<group>";
 		};
 		B0D96009E3C15602256249E7B4D98467 /* Targets Support Files */ = {
@@ -220,32 +208,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FB9CE765A48C41ACF11071699FF35305 /* Classes */ = {
+		F30B51BD20BC6BF79BA02FC232877242 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D05665461EC98DD200612927 /* TezGeocoder.h */,
-				D05665471EC98DD200612927 /* TezGeocoder.m */,
+				643D3EB262B330987B1686C6A3A83DB2 /* TezGeocoder.h */,
+				1B79769797B50099C04DB52189E23B57 /* TezGeocoder.m */,
 			);
+			name = Classes;
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		F8A0FBBEFEC7E53793C0C475E0082659 /* TezGeocoder */ = {
+			isa = PBXGroup;
+			children = (
+				F30B51BD20BC6BF79BA02FC232877242 /* Classes */,
+			);
+			name = TezGeocoder;
+			path = TezGeocoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5D8B3B9FF3280CC7835A2AC21D025999 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D056654A1EC98DD200612927 /* TezGeocoder.h in Headers */,
-				C60B3615620BC21F07642298D222B1EB /* TezGeocoder-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		75E735AB7A2160362B062B74532BE3D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D05665481EC98DD200612927 /* TezGeocoder.h in Headers */,
 				AC85C4A33984C3D182F6B26E4D873023 /* Pods-TezGeocoder_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,8 +242,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D05665491EC98DD200612927 /* TezGeocoder.h in Headers */,
 				51150A47667C77F9C552BF104EDEE7B4 /* Pods-TezGeocoder_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5884FD699DB30D897D3B16C7991450E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B945E0204C32116722C5C68F04DED1 /* TezGeocoder-umbrella.h in Headers */,
+				7F6193F27056727BC75CCC8FBDF57281 /* TezGeocoder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +280,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C02FEAF3C119DE44C679C510F3D55E2C /* Build configuration list for PBXNativeTarget "TezGeocoder" */;
 			buildPhases = (
-				A19A6C0D666C764E81BC6532C5DA1428 /* Sources */,
+				DF1ADFA4A96C2CA10096C8550FA3765E /* Sources */,
 				69CCC4C16CB27321B688E91C4B2436E7 /* Frameworks */,
-				5D8B3B9FF3280CC7835A2AC21D025999 /* Headers */,
+				C5884FD699DB30D897D3B16C7991450E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -348,16 +344,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				90E65EED884F28DBF6FEBE15E6048F37 /* Pods-TezGeocoder_Tests-dummy.m in Sources */,
-				D056654C1EC98DD200612927 /* TezGeocoder.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A19A6C0D666C764E81BC6532C5DA1428 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D056654D1EC98DD200612927 /* TezGeocoder.m in Sources */,
-				B90CEA9BB168518E6DBF29F329DD1EF4 /* TezGeocoder-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +352,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4813426C8134C50EA1F0F4A5B0B21C8A /* Pods-TezGeocoder_Example-dummy.m in Sources */,
-				D056654B1EC98DD200612927 /* TezGeocoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1ADFA4A96C2CA10096C8550FA3765E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3DD3985F8124AEA41995A4F340BFE3E /* TezGeocoder-dummy.m in Sources */,
+				63F92841CFADCEFB5ED4F8378692AADA /* TezGeocoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5C0AE8D5F4C976FC111AFBB0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5C0AE8D5F4C976FC111AFBB0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TezGeocoder_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TezGeocoder_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,8 +65,8 @@
 		C3A7701C3EFF95D2A9B3814D /* Pods-TezGeocoder_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TezGeocoder_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TezGeocoder_Tests/Pods-TezGeocoder_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9E6B231E23E530BD652D668 /* Pods_TezGeocoder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TezGeocoder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE558FFEB40CC155D2055175 /* Pods_TezGeocoder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TezGeocoder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB7842041CF92074A7059B28 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FF465FBAD05FD6295B0FBE4A /* TezGeocoder.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TezGeocoder.podspec; path = ../TezGeocoder.podspec; sourceTree = "<group>"; };
+		FB7842041CF92074A7059B28 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FF465FBAD05FD6295B0FBE4A /* TezGeocoder.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TezGeocoder.podspec; path = ../TezGeocoder.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -524,6 +524,7 @@
 			baseConfigurationReference = ACB796D99EF25A5C248E48E0 /* Pods-TezGeocoder_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TezGeocoder/TezGeocoder-Prefix.pch";
 				INFOPLIST_FILE = "TezGeocoder/TezGeocoder-Info.plist";
@@ -539,6 +540,7 @@
 			baseConfigurationReference = 614B0791ACFFBBC6A1EB2F59 /* Pods-TezGeocoder_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TezGeocoder/TezGeocoder-Prefix.pch";
 				INFOPLIST_FILE = "TezGeocoder/TezGeocoder-Info.plist";
